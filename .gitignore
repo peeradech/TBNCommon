@@ -1,0 +1,7 @@
+deployment/
+
+TBNCommon.mpr.bak
+TBNCommon.launch
+
+.svn
+.mendix-cache
