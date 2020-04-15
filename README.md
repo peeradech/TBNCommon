@@ -54,10 +54,10 @@ It's about of your application information via `model/metadata.json`.
 - **DS_Metadata** - Will return the Metadata entity.
 
 #### Translate Amount
-This microflow
+This microflow translate amount to Thai wording.
 
 *Usage:*
-- **TranslateAmount** - ...
+- **TranslateAmount** - Convert decimal to Thai wording.
 
 ### Rules
 *IsCitizenID* - Validate a Citizen ID of Thailand.
