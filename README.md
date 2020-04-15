@@ -1,14 +1,15 @@
 # TBNCommon
-Common function to use for each project.
+This module adds a number reusable Java methods to your project, which can be called from Microflows or custom Java actions. The module addes functionality for working with Dates, Microflows, Strings, Rules, Files, etc. See the documentation or screenshot for a complete list of functions.
 
 ## Description
 
 ## Dependencies
-**Mendix modules**
-- CommunityCommons
-
-**Libary**
-- common-lang3.jar
+**Library**
+- poi-4.0.0.jar
+- joda-time-2.9.6.jar
+- commons.lang3.jar
+- common-codec-1.11.jar
+- mimemagic-0.1.0.jar
   
 ## Function List
 ### AWS

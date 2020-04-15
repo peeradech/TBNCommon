@@ -107,8 +107,8 @@ public class UserActionsRegistrar
     registrator.registerUserAction(tbncommon.actions.Logout.class);
     registrator.registerUserAction(tbncommon.actions.MaskEmail.class);
     registrator.registerUserAction(tbncommon.actions.MaskString.class);
-    registrator.registerUserAction(tbncommon.actions.MoveFileFromS3ToLocalSystem.class);
-    registrator.registerUserAction(tbncommon.actions.MoveFileToLocalSystem.class);
+    registrator.registerUserAction(tbncommon.actions.MoveFileDocumentToLocalStorage.class);
+    registrator.registerUserAction(tbncommon.actions.MoveFileToLocalStorage.class);
     registrator.registerUserAction(tbncommon.actions.ParseDateTimeWithLocale.class);
   }
 }
