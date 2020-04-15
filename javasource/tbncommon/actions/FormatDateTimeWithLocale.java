@@ -16,6 +16,9 @@ import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
+/**
+ * Format datetime by locale and time zone.
+ */
 public class FormatDateTimeWithLocale extends CustomJavaAction<java.lang.String>
 {
 	private java.util.Date date;

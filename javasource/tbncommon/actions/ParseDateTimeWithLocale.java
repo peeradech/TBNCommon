@@ -15,6 +15,9 @@ import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
+/**
+ * Parse string to datetime by locale
+ */
 public class ParseDateTimeWithLocale extends CustomJavaAction<java.util.Date>
 {
 	private java.lang.String date;

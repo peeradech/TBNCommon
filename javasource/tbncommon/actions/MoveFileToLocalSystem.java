@@ -16,6 +16,9 @@ import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
+/**
+ * Move file from local storage from 'data/files/' to Mendix structure.
+ */
 public class MoveFileToLocalSystem extends CustomJavaAction<java.lang.Boolean>
 {
 	public MoveFileToLocalSystem(IContext context)

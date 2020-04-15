@@ -18,6 +18,9 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
+/**
+ * Download file from S3 to local storage by Mendix structure.
+ */
 public class MoveFileFromS3ToLocalSystem extends CustomJavaAction<java.lang.Boolean>
 {
 	private IMendixObject __file;
