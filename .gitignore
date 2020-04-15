@@ -1,6 +1,7 @@
 deployment/
 
 TBNCommon.mpr.bak
+TBNCommon.mpr.lock
 TBNCommon.launch
 
 .svn
