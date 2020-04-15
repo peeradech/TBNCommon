@@ -12,7 +12,7 @@ This module adds a number reusable Java methods to your project, which can be ca
 - mimemagic-0.1.0.jar
   
 ## Function List
-### AWS
+### 
 #### S3
 
   *MoveFileFromS3ToLocalSystem* - Copy file from S3 with Mendix condfiguration to locale storage by Mendix structure.
