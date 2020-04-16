@@ -11,7 +11,7 @@ The module addes functionality for working with Dates, Microflows, Strings, Rule
 - joda-time-2.9.6.jar
 - commons.lang3.jar
 - common-codec-1.11.jar
-- mimemagic-0.1.0.jar
+- jmimemagic-0.1.0.jar
   
 ## Function List
 ### Dates
@@ -20,17 +20,17 @@ The module addes functionality for working with Dates, Microflows, Strings, Rule
 
 *IsValidDate* - Valid date equals a your format or not.
 
-*ParseDateTimeWithLocale* - Convert string a date time to `Date` and `Time` with `Locale`
+*ParseDateTimeWithLocale* - Convert string a date time to `Date` and `Time` with `Locale`.
   
 ### Files
 
-*CountLineFileExcel* - *`Waiting P'Saw`*
+*CountLineFileExcel* - Last row contained on this sheet (0-based) or -1 if no row exists.
 
 *HashFile* - Generate the `MD5/SHA1` checksum of a file.
 
-*IsMatchFileType* - *`Waiting P'Saw`*
+*IsMatchFileType* - Validate file type, Is it match with the desirable file type.
 
-*IsMatchMimeType* - *`Waiting P'Saw`*
+*IsMatchMimeType* - Validate file type, Is it match from a stream of data.
 
 *MoveFileFromS3ToLocalSystem* - Move file from `FileDocument` to `Locale Storage` with Mendix structure.
 
@@ -38,13 +38,13 @@ The module addes functionality for working with Dates, Microflows, Strings, Rule
 
 ### String
 
-*MaskEmail* - *`Waiting P'Saw`*
+*MaskEmail* - Marking an email format.
 
-*MaskString* - *`Waiting P'Saw`*
+*MaskString* - Marking a string.
 
 ### Other
 
-  *Logout* - Signout *`Waiting P'Saw`*
+  *Logout* - Signout.
 
 ### Microflow
 #### Application Version
@@ -62,17 +62,17 @@ This microflow translate amount to Thai wording.
 ### Rules
 *IsCitizenID* - Validate a Citizen ID of Thailand.
 
-*IsDecimal* - *`Waiting P'Saw`*
+*IsDecimal* - Validate a Decimal.
 
-*IsEmailFormat* - *`Waiting P'Saw`*
+*IsEmailFormat* - Validate an Email.
 
 *IsHexColor* - Validation a string is Hex or not.
 
-*IsMobile* - *`Waiting P'Saw`*
+*IsMobile* - Validate a Mobile.
 
-*IsNumber* - *`Waiting P'Saw`*
+*IsNumber* - Validate a 0-9.
 
-*IsString_EN* - *`Waiting P'Saw`*
+*IsString_EN* - Validate a Character a-zA-Z0-9.
 
-*IsString_TH* - *`Waiting P'Saw`*
+*IsString_TH* - Validate a character ก-๙0-9.
 
