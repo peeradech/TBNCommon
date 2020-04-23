@@ -60,7 +60,7 @@ This microflow translate amount to Thai wording.
 - **TranslateAmount** - Convert decimal to Thai wording.
 
 ### Rules
-*IsCitizenID* - Validate a Citizen ID of Thailand.
+*IsThaiCitizenID* - Validate a Citizen ID of Thai.
 
 *IsDecimal* - Validate a Decimal.
 
