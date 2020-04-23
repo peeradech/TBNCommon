@@ -1,8 +1,8 @@
 deployment/
 
-TBNCommon.mpr.bak
-TBNCommon.mpr.lock
-TBNCommon.launch
+*.mpr.bak
+*.mpr.lock
+*.launch
 
 .svn
 .mendix-cache
