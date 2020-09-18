@@ -44,7 +44,8 @@ The module addes functionality for working with Dates, Microflows, Strings, Rule
 
 ### Other
 
-  *Logout* - Signout.
+*Logout* - Signout.
+*LoginUser* - Create Session and add XASSESSION, XASID to cookie.
 
 ### Microflow
 #### Application Version
@@ -58,6 +59,9 @@ This microflow translate amount to Thai wording.
 
 *Usage:*
 - **TranslateAmount** - Convert decimal to Thai wording.
+
+#### Redirect
+This microflow for redirect by http header.
 
 ### Rules
 *IsThaiCitizenID* - Validate a Citizen ID of Thai.

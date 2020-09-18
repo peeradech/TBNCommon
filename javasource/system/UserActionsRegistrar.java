@@ -104,6 +104,7 @@ public class UserActionsRegistrar
     registrator.registerUserAction(tbncommon.actions.IsMatchFileType.class);
     registrator.registerUserAction(tbncommon.actions.IsMatchMimeType.class);
     registrator.registerUserAction(tbncommon.actions.IsValidDate.class);
+    registrator.registerUserAction(tbncommon.actions.LoginUser.class);
     registrator.registerUserAction(tbncommon.actions.Logout.class);
     registrator.registerUserAction(tbncommon.actions.MaskEmail.class);
     registrator.registerUserAction(tbncommon.actions.MaskString.class);
