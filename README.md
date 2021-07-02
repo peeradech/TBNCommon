@@ -6,6 +6,8 @@ This module adds a number reusable Java methods to your project, which can be ca
 
 The module addes functionality for working with Dates, Microflows, Strings, Rules, Files, etc. See the documentation or screenshot for a complete list of functions.
 ## Dependencies
+**Module**
+Community Commons
 **Library**
 - poi-4.0.0.jar
 - joda-time-2.9.6.jar
