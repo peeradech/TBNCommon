@@ -9,41 +9,41 @@
 
 package communitycommons.actions;
 
-import communitycommons.StringUtils;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
+import communitycommons.StringUtils;
 
 /**
- * Decrypts an AES encrypted string.
- * The keylength should exactly be 16 characters (128 bit).
+ * Removes a string (if present) from the end of an input string,
  */
-public class EncryptString extends CustomJavaAction<java.lang.String>
+public class RemoveEnd extends CustomJavaAction<java.lang.String>
 {
-	private java.lang.String valueToEncrypt;
-	private java.lang.String key;
+	private java.lang.String input;
+	private java.lang.String toRemove;
 
-	public EncryptString(IContext context, java.lang.String valueToEncrypt, java.lang.String key)
+	public RemoveEnd(IContext context, java.lang.String input, java.lang.String toRemove)
 	{
 		super(context);
-		this.valueToEncrypt = valueToEncrypt;
-		this.key = key;
+		this.input = input;
+		this.toRemove = toRemove;
 	}
 
 	@java.lang.Override
 	public java.lang.String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		return StringUtils.encryptString(key, valueToEncrypt);
+		return StringUtils.removeEnd(input, toRemove);
 		// END USER CODE
 	}
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()
 	{
-		return "EncryptString";
+		return "RemoveEnd";
 	}
 
 	// BEGIN EXTRA CODE

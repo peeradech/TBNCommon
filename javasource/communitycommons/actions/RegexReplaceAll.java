@@ -14,9 +14,8 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
 /**
- * Deprecated.
+ * Performs a regular expression. Similar to the replaceAll microflow function, but supports more advanced usages such as capture variables.
  * 
- * Performs a regular expression. Identical to the microflow expression funciton 'replaceAll'.
  * For the regexp specification see:
  * https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html
  * 
@@ -47,6 +46,7 @@ public class RegexReplaceAll extends CustomJavaAction<java.lang.String>
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

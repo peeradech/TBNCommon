@@ -42,7 +42,7 @@ public class IsMatchMimeType extends CustomJavaAction<java.lang.Boolean>
 	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
-		this.File = __File == null ? null : system.proxies.FileDocument.initialize(getContext(), __File);
+		this.File = this.__File == null ? null : system.proxies.FileDocument.initialize(getContext(), __File);
 
 		// BEGIN USER CODE
 		InputStream is = null;
@@ -81,6 +81,7 @@ public class IsMatchMimeType extends CustomJavaAction<java.lang.Boolean>
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

@@ -40,7 +40,7 @@ public class CountLineFileExcel extends CustomJavaAction<java.lang.Long>
 	@java.lang.Override
 	public java.lang.Long executeAction() throws Exception
 	{
-		this.ImportExcelDoc = __ImportExcelDoc == null ? null : system.proxies.FileDocument.initialize(getContext(), __ImportExcelDoc);
+		this.ImportExcelDoc = this.__ImportExcelDoc == null ? null : system.proxies.FileDocument.initialize(getContext(), __ImportExcelDoc);
 
 		// BEGIN USER CODE
         long line = 0;
@@ -84,6 +84,7 @@ public class CountLineFileExcel extends CustomJavaAction<java.lang.Long>
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

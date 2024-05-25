@@ -27,7 +27,7 @@ public class Metadata
 		Description("Description"),
 		AdminUser("AdminUser");
 
-		private java.lang.String metaName;
+		private final java.lang.String metaName;
 
 		MemberNames(java.lang.String s)
 		{
@@ -43,15 +43,17 @@ public class Metadata
 
 	public Metadata(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		this(context, com.mendix.core.Core.instantiate(context, "TBNCommon.Metadata"));
+		this(context, com.mendix.core.Core.instantiate(context, entityName));
 	}
 
 	protected Metadata(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject metadataMendixObject)
 	{
-		if (metadataMendixObject == null)
+		if (metadataMendixObject == null) {
 			throw new java.lang.IllegalArgumentException("The given object cannot be null.");
-		if (!com.mendix.core.Core.isSubClassOf("TBNCommon.Metadata", metadataMendixObject.getType()))
-			throw new java.lang.IllegalArgumentException("The given object is not a TBNCommon.Metadata");
+		}
+		if (!com.mendix.core.Core.isSubClassOf(entityName, metadataMendixObject.getType())) {
+			throw new java.lang.IllegalArgumentException(String.format("The given object is not a %s", entityName));
+		}	
 
 		this.metadataMendixObject = metadataMendixObject;
 		this.context = context;
@@ -69,6 +71,9 @@ public class Metadata
 	/**
 	 * Initialize a proxy using context (recommended). This context will be used for security checking when the get- and set-methods without context parameters are called.
 	 * The get- and set-methods with context parameter should be used when for instance sudo access is necessary (IContext.createSudoClone() can be used to obtain sudo access).
+	 * @param context The context to be used
+	 * @param mendixObject The Mendix object for the new instance
+	 * @return a new instance of this proxy class
 	 */
 	public static tbncommon.proxies.Metadata initialize(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject mendixObject)
 	{
@@ -83,6 +88,7 @@ public class Metadata
 
 	/**
 	 * Commit the changes made on this proxy object.
+	 * @throws com.mendix.core.CoreException
 	 */
 	public final void commit() throws com.mendix.core.CoreException
 	{
@@ -91,6 +97,7 @@ public class Metadata
 
 	/**
 	 * Commit the changes made on this proxy object using the specified context.
+	 * @throws com.mendix.core.CoreException
 	 */
 	public final void commit(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
 	{
@@ -347,9 +354,9 @@ public class Metadata
 	@java.lang.Override
 	public boolean equals(Object obj)
 	{
-		if (obj == this)
+		if (obj == this) {
 			return true;
-
+		}
 		if (obj != null && getClass().equals(obj.getClass()))
 		{
 			final tbncommon.proxies.Metadata that = (tbncommon.proxies.Metadata) obj;
@@ -369,7 +376,7 @@ public class Metadata
 	 */
 	public static java.lang.String getType()
 	{
-		return "TBNCommon.Metadata";
+		return entityName;
 	}
 
 	/**
