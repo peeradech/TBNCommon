@@ -12,6 +12,7 @@ The module addes functionality for working with Dates, Microflows, Strings, Rule
 
 **Library**
 - jmimemagic-0.1.0.jar
+- joda-time-2.12.7.jar
   
 ## Function List
 ### Dates
