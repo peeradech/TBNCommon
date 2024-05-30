@@ -8,12 +8,9 @@ The module addes functionality for working with Dates, Microflows, Strings, Rule
 ## Dependencies
 **Module**
 - Community Commons
+- Excel importer
 
 **Library**
-- poi-4.0.0.jar
-- joda-time-2.9.6.jar
-- commons.lang3.jar
-- common-codec-1.11.jar
 - jmimemagic-0.1.0.jar
   
 ## Function List
